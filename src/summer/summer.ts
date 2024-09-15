@@ -1,4 +1,4 @@
-import { runScripts, Key, ScrollKey, getTapKey } from '@node-ahk';
+import { runScripts, Key, ScrollKey, getTapKey } from 'node-ahk';
 import { getCommonScripts } from './commonScripts';
 import { getScrollScripts } from './scrollScripts';
 import { getShifterScript, sixShifterPairs } from './shifterScripts';

@@ -1,18 +1,18 @@
 {
-  "name": "server",
+  "name": "node-ahk-scripts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-standalone": "tsc",
+    "install": "npm link suchibot node-ahk",
     "build": "node esbuild.mjs"    
-  },
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "esbuild": "^0.20.2",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2"    
   }
 }

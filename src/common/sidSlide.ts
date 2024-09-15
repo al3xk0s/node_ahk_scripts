@@ -1,4 +1,4 @@
-import { Key, getTickByHold } from "@node-ahk";
+import { Key, getTickByHold } from "node-ahk";
 
 const main = () => {
     getTickByHold({

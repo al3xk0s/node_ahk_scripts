@@ -4,7 +4,7 @@ import {
     getHoldKey,
     getTickKey,
     Key,
-} from '@node-ahk';
+} from 'node-ahk';
 
 export const getCommonScripts = () : ScriptWithDoc => 
     combineScriptsWithDoc([

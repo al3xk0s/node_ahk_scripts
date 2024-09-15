@@ -5,7 +5,7 @@ import {
     doc,
     runScripts,
     wrapToScriptWithDoc,
-} from '@node-ahk';
+} from 'node-ahk/dist';
 
 import { getCommonScripts } from "./commonScripts";
 

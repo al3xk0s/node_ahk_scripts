@@ -12,10 +12,7 @@
     "outDir": "dist",
     "declaration": true,
     "strict": true,
-    "alwaysStrict": true,
-    "paths": {
-      "@node-ahk": [ "./lib/node_ahk/index" ]
-    }
+    "alwaysStrict": true
   },  
   "include": [
     "src/**/*.ts"

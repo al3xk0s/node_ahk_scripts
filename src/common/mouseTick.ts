@@ -1,4 +1,4 @@
-import { runScripts, getTickByHold, Key, MouseKey } from "@node-ahk";
+import { runScripts, getTickByHold, Key, MouseKey } from "node-ahk";
 
 const main = () => runScripts([
     getTickByHold({when: Key.F, then: MouseKey.LEFT, activate: Key.NUMPAD_ADD}),

@@ -7,7 +7,7 @@ import {
     combineListeners,
     WhileAsyncProps,
     StringUtils,
-} from '@node-ahk';
+} from 'node-ahk';
 
 type ScrollScriptsProps = {
     scrollUpToggle: IPhysicalKey;

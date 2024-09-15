@@ -1,4 +1,4 @@
-import { IPhysicalKey, Key } from "@node-ahk";
+import { IPhysicalKey, Key } from "node-ahk";
 
 export const defaultActivate = Key.NUMPAD_ADD;
 

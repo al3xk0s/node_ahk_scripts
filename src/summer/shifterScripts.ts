@@ -6,7 +6,7 @@ import {
     DisposeWrapper,
     toListener,
     toggleStateByTap
-} from '@node-ahk';
+} from 'node-ahk';
 
 export interface IShifterKey {
     trigger: IPhysicalKey;
