@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "npm link suchibot node-ahk",
-    "build": "node esbuild.mjs"    
-  },  
+    "build": "node esbuild.mjs"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "node-ahk": "github:al3xk0s/node_ahk#1.0.0",
+    "suchibot": "^1.9.2"
+  },
   "devDependencies": {
     "esbuild": "^0.20.2",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"    
+    "typescript": "^5.2.2"
   }
 }
