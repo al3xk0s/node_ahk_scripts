@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "node esbuild.mjs"
-  },
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-ahk": "github:al3xk0s/node_ahk#1.0.0",
+    "node-ahk": "github:al3xk0s/node_ahk#2.0.0",
     "suchibot": "^1.9.2"
   },
   "devDependencies": {

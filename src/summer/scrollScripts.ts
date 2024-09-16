@@ -1,5 +1,5 @@
 import {
-    doc,
+    DocUtils,
     wrapToScriptWithDoc,
     IPhysicalKey,
     ScrollKey,
@@ -43,8 +43,8 @@ const scrollScript = ({
 export const getScrollScripts = wrapToScriptWithDoc(
     scrollScript, {
     getDoc: ({scrollUpToggle, scrollDownToggle, triggerButton}) => [
-        `${StringUtils.toTitleCase(doc.activate(scrollUpToggle))} to up direction`,
+        `${StringUtils.toTitleCase(DocUtils.activate(scrollUpToggle))} to up direction`,
         `or ${scrollDownToggle.toString()} to down direction,`,
-        `and ${doc.activate(triggerButton)} to start scroll tick`
+        `and ${DocUtils.activate(triggerButton)} to start scroll tick`
     ].join(' ')
 })

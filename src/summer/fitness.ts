@@ -2,7 +2,7 @@ import {
     Key,
     WhenKeyProps,
     whileNeedAsync,
-    doc,
+    DocUtils,
     runScripts,
     wrapToScriptWithDoc,
 } from 'node-ahk';
@@ -19,11 +19,11 @@ const burpeeScript = ({when, sitDelay = 400, jumpDelay = 725}: BurpeeScriptProps
     const jumpButton = Key.SPACE;
 
     const sit = async () => {
-        await sitButton.holdTimed(sitDelay);
-        return sitButton.holdTimed(sitDelay);
+        await sitButton.holdOnTime(sitDelay);
+        return sitButton.holdOnTime(sitDelay);
     }
 
-    const jump = () => jumpButton.holdTimed(jumpDelay);
+    const jump = () => jumpButton.holdOnTime(jumpDelay);
 
     const doBurpee = async () => {
         await sit();
@@ -37,7 +37,7 @@ const burpeeScript = ({when, sitDelay = 400, jumpDelay = 725}: BurpeeScriptProps
 
 const getBurpeeScript = wrapToScriptWithDoc(
     burpeeScript, {
-    getDoc: ({when}) => `When ${doc.activate(when)}, then do burpee`,
+    getDoc: ({when}) => `When ${DocUtils.activate(when)}, then do burpee`,
 });
 
 const main = () => {

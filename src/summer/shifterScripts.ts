@@ -1,5 +1,5 @@
 import {
-    doc,
+    DocUtils,
     wrapToScriptWithDoc,
     IPhysicalKey,
     Key,
@@ -60,7 +60,7 @@ export const shifterScript = (toggle: IPhysicalKey, pairs: KeyGearPair[]) => {
 
 export const getShifterScript = wrapToScriptWithDoc(
     shifterScript, {
-    getDoc: (toggle, pairs) => `When ${doc.activate(toggle)}, then shifter works (${pairsToString(pairs)})`,
+    getDoc: (toggle, pairs) => `When ${DocUtils.activate(toggle)}, then shifter works (${pairsToString(pairs)})`,
 });
 
 
